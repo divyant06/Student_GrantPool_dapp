@@ -1,0 +1,146 @@
+.wrapper {
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  min-height: 200px;
+  width: 65%;
+  margin: 0 auto;
+  border-radius: 1rem;
+  box-shadow:
+    0 0 25px rgba(0, 243, 255, 0.15),
+    0 0 50px rgba(176, 38, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #f0f4fa;
+  text-align: center;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.pot {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  color: #f0f4fa;
+  text-align: center;
+  flex: 1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.potAmount {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #00f3ff;
+  text-align: center;
+  text-shadow:
+    0 0 15px rgba(0, 243, 255, 0.8),
+    0 0 30px rgba(0, 243, 255, 0.4);
+  animation: pulseNeon 2s infinite alternate;
+}
+
+@keyframes pulseNeon {
+  0% {
+    text-shadow:
+      0 0 10px rgba(0, 243, 255, 0.5),
+      0 0 20px rgba(0, 243, 255, 0.3);
+    opacity: 0.9;
+  }
+  100% {
+    text-shadow:
+      0 0 20px rgba(0, 243, 255, 0.9),
+      0 0 40px rgba(0, 243, 255, 0.6),
+      0 0 60px rgba(0, 243, 255, 0.3);
+    color: #fff;
+    opacity: 1;
+  }
+}
+
+.btn {
+  background: #1a1a1a;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  place-self: center;
+  color: #fff;
+  padding: 18px 32px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 25px;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  border: 1px solid #00f3ff;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  border-color: #b026ff;
+  box-shadow:
+    0 0 20px rgba(176, 38, 255, 0.6),
+    0 0 40px rgba(176, 38, 255, 0.3),
+    inset 0 0 10px rgba(176, 38, 255, 0.2);
+  color: #fff;
+}
+
+.recentWinnerTitle {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: #f0f4fa;
+  text-align: center;
+  margin-top: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.winner {
+  font-size: 1.6rem;
+  font-weight: bolder;
+  color: #b026ff;
+  text-align: center;
+  text-shadow:
+    0 0 15px rgba(176, 38, 255, 0.6),
+    0 0 30px rgba(176, 38, 255, 0.3);
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+
+.textAccent {
+  color: #b026ff;
+  text-shadow: 0 0 15px rgba(176, 38, 255, 0.6);
+}
+
+.drawWinnerBtn {
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 20%;
+  border: 1px solid #00f3ff;
+  border-radius: 0.5rem;
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  cursor: pointer;
+  color: #f0f4fa;
+  transition: all 0.3s ease;
+}
+
+.drawWinnerBtn:hover {
+  transform: scale(1.05);
+  border-color: #b026ff;
+  box-shadow: 0 0 20px rgba(176, 38, 255, 0.6);
+}
